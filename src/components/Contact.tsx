@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
-import { Phone, Mail, ArrowUpRight } from "lucide-react";
+import { Phone, Mail, ArrowUpRight, MapPin } from "lucide-react";
 import { siteContent } from "@/data/content";
 
 export default function Contact() {
@@ -163,6 +163,34 @@ export default function Contact() {
               </div>
             </motion.a>
           </div>
+
+          {/* 4. Office Address */}
+          <motion.a
+            href={contact.address.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={itemVariants}
+            aria-label="Get directions to the FST Engineering office on Google Maps"
+            className="group flex flex-col lg:flex-row lg:items-center justify-between p-8 sm:p-10 hover:bg-slate-50/70 transition-colors duration-200 border-t border-[#DDE5EE] focus:outline-none focus:bg-slate-50/70"
+          >
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-xl bg-[#10337A] flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-transform duration-200 shadow-sm">
+                <MapPin className="w-6 h-6 text-white" aria-hidden="true" />
+              </div>
+              <div>
+                <span className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+                  {contact.address.label}
+                </span>
+                <span className="block text-base sm:text-lg font-semibold text-[#10337A] select-text tracking-tight max-w-[260px] sm:max-w-none">
+                  {contact.address.display}
+                </span>
+              </div>
+            </div>
+            <div className="pt-6 lg:pt-0 flex items-center gap-1.5 text-sm font-semibold text-[#1E9BD0] group-hover:translate-x-0.5 transition-transform shrink-0">
+              <span>{contact.address.action}</span>
+              <ArrowUpRight className="w-4 h-4 text-[#1E9BD0]" />
+            </div>
+          </motion.a>
         </motion.div>
       </div>
     </section>

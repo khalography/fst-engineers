@@ -79,6 +79,13 @@ export interface ContactInfo {
     action: string;
     ariaLabel: string;
   };
+  address: {
+    label: string;
+    display: string;
+    href: string;
+    action: string;
+    ariaLabel: string;
+  };
 }
 
 export const siteContent = {
@@ -393,6 +400,13 @@ export const siteContent = {
       href: "https://wa.me/2348039167367?text=Hello%20FST%20Engineering%2C%20I%20would%20like%20to%20enquire%20about%20your%20water%20tanks.",
       action: "Chat now",
       ariaLabel: "Chat with FST Engineering on WhatsApp",
+    },
+    address: {
+      label: "Office Address",
+      display: "Mile 12 Ikorodu Road, Owode Onirin, Lagos",
+      href: "https://www.google.com/maps/search/?api=1&query=Mile%2012%20Ikorodu%20Road%2C%20Owode%20Onirin%2C%20Lagos",
+      action: "Get directions",
+      ariaLabel: "Get directions to the FST Engineering office on Google Maps",
     },
   } as ContactInfo,
 };
