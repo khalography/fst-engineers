@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fst-navy: #10337a;
+  --color-fst-navy-dark: #0a204d;
+  --color-fst-navy-light: #16439b;
+  --color-fst-cyan: #1e9bd0;
+  --color-fst-cyan-light: #eaf6fc;
+  --color-fst-cyan-dark: #157ea9;
+  --color-fst-gold: #c5a253;
+  --color-fst-gold-light: #f8f4ea;
+  --color-fst-gold-dark: #a18136;
+  --color-fst-charcoal: #555b61;
+  --color-fst-charcoal-light: #7b838c;
+  --color-fst-charcoal-dark: #22262a;
+  --color-fst-surface: #f8fafc;
+  --color-fst-border: #e5e9ee;
+
+  --font-heading: var(--font-montserrat), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #555b61;
+  background-color: #ffffff;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-montserrat), sans-serif;
+    color: #10337a;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+/* Lightbox custom styling overrides for high clarity */
+.yarl__portal {
+  backdrop-filter: blur(8px);
+}
+
+.yarl__slide_title_container {
+  top: auto !important;
+  bottom: 0 !important;
+  text-align: center;
+}
+
+/* Custom focus styles for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #1e9bd0;
+  outline-offset: 2px;
+}
+
+/* Header nav links and buttons should never show an outline box on click or focus */
+header a,
+header button,
+header a:focus,
+header button:focus,
+header a:focus-visible,
+header button:focus-visible,
+header a:active,
+header button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Subtle Swoosh Divider & Accent Utilities */
+.swoosh-gradient {
+  background: linear-gradient(90deg, #10337a 0%, #1e9bd0 50%, #c5a253 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
