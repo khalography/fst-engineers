@@ -16,6 +16,10 @@ export default function HomePage() {
       <Header />
 
       <main className="flex-1">
+        <h1 className="sr-only">
+          FST Engineering: GRP Fibre and Pressed Steel Water Tanks in Nigeria
+        </h1>
+
         {/* 2. Hero Section with Carousel and Framer Motion overlay */}
         <Hero />
 

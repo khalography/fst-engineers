@@ -126,7 +126,6 @@ export default function SteelSlideshow() {
                     src={slide.src}
                     alt={slide.alt}
                     fill
-                    priority={index === 0}
                     quality={85}
                     className="object-contain"
                     sizes="(max-width: 1024px) 100vw, 40vw"
@@ -176,10 +175,14 @@ export default function SteelSlideshow() {
                 type="button"
                 aria-label={`Go to slide ${index + 1}`}
                 onClick={() => scrollTo(index)}
-                className={`h-1.5 rounded-full transition-all duration-300 focus:outline-none ${
-                  isActive ? "w-5 bg-[#1E9BD0]" : "w-1.5 bg-white/50 hover:bg-white/80"
-                }`}
-              />
+                className="p-1 inline-flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-white rounded-full"
+              >
+                <span
+                  className={`block h-1.5 rounded-full transition-all duration-300 ${
+                    isActive ? "w-5 bg-[#1E9BD0]" : "w-1.5 bg-white/50 hover:bg-white/80"
+                  }`}
+                />
+              </button>
             );
           })}
         </div>

@@ -390,12 +390,12 @@ export default function Hero() {
                 </div>
 
                 {/* Headline: white, bold, subtle text shadow */}
-                <h1
+                <p
                   className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight"
                   style={{ color: "#ffffff", textShadow: "0 2px 12px rgba(0,0,0,0.35)" }}
                 >
                   {currentSlide.headline}
-                </h1>
+                </p>
 
                 {/* Supporting line: white at ~90% opacity, one short sentence */}
                 <p className="text-base sm:text-lg lg:text-xl text-white/90 font-normal leading-relaxed max-w-2xl">

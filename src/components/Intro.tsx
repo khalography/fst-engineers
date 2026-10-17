@@ -12,6 +12,8 @@ export default function Intro() {
       className="py-16 sm:py-20 lg:py-24 bg-white border-b border-slate-100"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
+        <h2 className="sr-only">Company Introduction</h2>
+
         {/* Company Intro Statement */}
         <div className="max-w-4xl">
           <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#10337A] leading-[1.35] tracking-tight text-justify">

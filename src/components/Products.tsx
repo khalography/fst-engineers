@@ -53,9 +53,9 @@ export default function Products() {
 
           {/* Sub-section A: Physical Properties */}
           <div id="product-properties" className="space-y-4 scroll-mt-24 pt-4">
-            <h4 className="text-xl sm:text-2xl font-bold text-[#10337A]">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#10337A]">
               {p1.properties.title}
-            </h4>
+            </h3>
 
             {/* Responsive Table: scrolls horizontally inside container with no page overflow */}
             <div className="w-full overflow-x-auto rounded-lg border border-slate-200 bg-white shadow-sm">
@@ -106,9 +106,9 @@ export default function Products() {
 
           {/* Sub-section B: GRP/FRP Tank Specification */}
           <div id="product-specification" className="space-y-4 scroll-mt-24 pt-4">
-            <h4 className="text-xl sm:text-2xl font-bold text-[#10337A]">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#10337A]">
               {p1.specifications.title}
-            </h4>
+            </h3>
 
             {/* Two-column label/value list with thin dividers */}
             <div className="divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white shadow-sm overflow-hidden">
@@ -130,9 +130,9 @@ export default function Products() {
 
           {/* Sub-section C: Advantages of GRP Fibre Tank */}
           <div id="product-advantages" className="space-y-4 scroll-mt-24 pt-4">
-            <h4 className="text-xl sm:text-2xl font-bold text-[#10337A]">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#10337A]">
               {p1.advantages.title}
-            </h4>
+            </h3>
 
             {/* Grid of 9 short items (3 cols desktop, 2 tablet, 1 mobile) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
