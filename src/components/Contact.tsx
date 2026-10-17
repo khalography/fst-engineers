@@ -64,11 +64,9 @@ export default function Contact() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-slate-200/80">
             {/* 1. Phone */}
-            <motion.a
-              href={contact.phone.href}
+            <motion.div
               variants={itemVariants}
-              aria-label={`Call FST Engineering at ${contact.phone.display}`}
-              className="group flex flex-col justify-between p-8 sm:p-10 hover:bg-slate-50/70 transition-colors duration-200 min-h-[160px] focus:outline-none focus:bg-slate-50/70"
+              className="group flex flex-col justify-between p-8 sm:p-10 hover:bg-slate-50/70 transition-colors duration-200 min-h-[160px]"
             >
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-xl bg-[#10337A] flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-transform duration-200 shadow-sm">
@@ -78,16 +76,28 @@ export default function Contact() {
                   <span className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
                     {contact.phone.label}
                   </span>
-                  <span className="block text-lg sm:text-xl font-semibold text-[#10337A] select-text tracking-tight">
-                    {contact.phone.display}
-                  </span>
+                  <div className="space-y-1">
+                    {contact.phone.numbers.map((item) => (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        className="block text-base sm:text-lg font-semibold text-[#10337A] hover:text-[#1E9BD0] transition-colors select-text tracking-tight"
+                        aria-label={`Call FST Engineering at ${item.display}`}
+                      >
+                        {item.display}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className="pt-6 flex items-center gap-1.5 text-sm font-semibold text-[#1E9BD0] group-hover:translate-x-0.5 transition-transform">
+              <a
+                href={contact.phone.href}
+                className="pt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1E9BD0] hover:text-[#10337A] transition-colors group-hover:translate-x-0.5 duration-200 w-fit"
+              >
                 <span>{contact.phone.action}</span>
                 <ArrowUpRight className="w-4 h-4 text-[#1E9BD0]" />
-              </div>
-            </motion.a>
+              </a>
+            </motion.div>
 
             {/* 2. Email */}
             <motion.a

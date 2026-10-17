@@ -52,12 +52,18 @@ export interface TestimonialItem {
   initials: string;
 }
 
+export interface PhoneItem {
+  display: string;
+  href: string;
+}
+
 export interface ContactInfo {
   heading: string;
   phone: {
     label: string;
     display: string;
     href: string;
+    numbers: PhoneItem[];
     action: string;
   };
   email: {
@@ -369,6 +375,10 @@ export const siteContent = {
       label: "Phone",
       display: "+234 803 916 7367",
       href: "tel:+2348039167367",
+      numbers: [
+        { display: "+234 803 916 7367", href: "tel:+2348039167367" },
+        { display: "+234 902 078 8069", href: "tel:+2349020788069" },
+      ],
       action: "Call us",
     },
     email: {
