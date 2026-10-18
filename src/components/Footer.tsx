@@ -27,8 +27,9 @@ export default function Footer() {
             <Image
               src={brand.logo}
               alt={brand.logoAlt}
-              width={200}
-              height={52}
+              width={160}
+              height={107}
+              sizes="160px"
               style={{ width: "auto" }}
               className="h-[48px] sm:h-[52px] w-auto object-contain"
             />

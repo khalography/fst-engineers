@@ -57,6 +57,11 @@ export interface PhoneItem {
   href: string;
 }
 
+export interface EmailItem {
+  display: string;
+  href: string;
+}
+
 export interface ContactInfo {
   heading: string;
   phone: {
@@ -70,6 +75,7 @@ export interface ContactInfo {
     label: string;
     display: string;
     href: string;
+    emails?: EmailItem[];
     action: string;
   };
   whatsapp: {
@@ -390,8 +396,12 @@ export const siteContent = {
     },
     email: {
       label: "Email",
-      display: "majarilwan@gmail.com",
-      href: "mailto:majarilwan@gmail.com",
+      display: "info@fstwatertank.com",
+      href: "mailto:info@fstwatertank.com",
+      emails: [
+        { display: "info@fstwatertank.com", href: "mailto:info@fstwatertank.com" },
+        { display: "majarilwan@gmail.com", href: "mailto:majarilwan@gmail.com" },
+      ],
       action: "Email us",
     },
     whatsapp: {

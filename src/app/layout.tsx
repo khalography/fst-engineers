@@ -79,8 +79,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/favicon.ico", sizes: "any" },
       { url: "/icon.png", sizes: "512x512", type: "image/png" },
-      { url: "/images/logo.png" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
@@ -95,6 +95,10 @@ export default function RootLayout({
     ? siteContent.contact.phone.numbers.map((n) => n.display)
     : [siteContent.contact.phone.display];
 
+  const emails = siteContent.contact.email.emails
+    ? siteContent.contact.email.emails.map((e) => e.display)
+    : [siteContent.contact.email.display];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -104,7 +108,7 @@ export default function RootLayout({
     image: `${SITE_URL}/images/og-image.png`,
     description: siteDescription,
     telephone: telephones.length === 1 ? telephones[0] : telephones,
-    email: siteContent.contact.email.display,
+    email: emails.length === 1 ? emails[0] : emails,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Mile 12 Ikorodu Road, Owode Onirin",

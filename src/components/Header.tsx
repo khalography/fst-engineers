@@ -119,9 +119,9 @@ export default function Header() {
             <Image
               src={siteContent.brand.logo}
               alt={siteContent.brand.logoAlt}
-              width={200}
-              height={54}
-              priority
+              width={160}
+              height={107}
+              sizes="160px"
               style={{ width: "auto" }}
               className="h-[50px] sm:h-[54px] w-auto object-contain"
             />

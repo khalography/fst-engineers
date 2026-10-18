@@ -5,6 +5,7 @@ import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { blurDataURLs } from "@/data/blurDataURLs";
 
 const slides = [
   {
@@ -87,27 +88,17 @@ export default function AboutSlideshow() {
               className="relative flex-[0_0_100%] min-w-0 w-full h-full shrink-0 overflow-hidden"
               style={{ flex: "0 0 100%", minWidth: 0 }}
             >
-              <div className="relative w-full h-full flex items-center justify-center">
-                {/* Ambient Blurred Background to gracefully fill portrait aspect ratio */}
+              <div className="relative w-full h-full flex items-center justify-center p-1.5 sm:p-2">
                 <Image
                   src={slide.src}
-                  alt=""
+                  alt={slide.alt}
                   fill
-                  quality={30}
-                  className="object-cover blur-md scale-110 opacity-35 pointer-events-none"
-                  aria-hidden="true"
+                  quality={85}
+                  className="object-contain"
+                  sizes="(min-width: 1024px) 560px, 90vw"
+                  placeholder="blur"
+                  blurDataURL={blurDataURLs[slide.src]}
                 />
-                {/* Sharp Primary Image */}
-                <div className="relative w-full h-full z-10 p-1.5 sm:p-2">
-                  <Image
-                    src={slide.src}
-                    alt={slide.alt}
-                    fill
-                    quality={85}
-                    className="object-contain"
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                  />
-                </div>
               </div>
             </div>
           ))}
