@@ -374,7 +374,7 @@ export default function Hero() {
       {/* Hero Content Overlay: only for standard slides 1 to 3 */}
       {!currentSlide.isGallery && currentSlide.headline && (
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 pointer-events-none">
-          <div className="max-w-3xl pointer-events-auto">
+          <div className="max-w-3xl pointer-events-auto text-left">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedIndex}
@@ -382,23 +382,26 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
-                className="space-y-5"
+                className="space-y-5 text-left"
               >
                 {/* Badge above headline */}
-                <div className="text-white/85 text-xs sm:text-sm font-semibold uppercase tracking-wider">
+                <div className="text-white/85 text-xs sm:text-sm font-semibold uppercase tracking-wider text-left">
                   {currentSlide.tag}
                 </div>
 
                 {/* Headline: white, bold, subtle text shadow */}
                 <p
-                  className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight"
-                  style={{ color: "#ffffff", textShadow: "0 2px 12px rgba(0,0,0,0.35)" }}
+                  className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight text-left"
+                  style={{ color: "#ffffff", textShadow: "0 2px 12px rgba(0,0,0,0.35)", textAlign: "left" }}
                 >
                   {currentSlide.headline}
                 </p>
 
                 {/* Supporting line: white at ~90% opacity, one short sentence */}
-                <p className="text-base sm:text-lg lg:text-xl text-white/90 font-normal leading-relaxed max-w-2xl">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-white/90 font-normal leading-relaxed max-w-2xl text-left"
+                  style={{ textAlign: "left" }}
+                >
                   {currentSlide.subheadline}
                 </p>
 

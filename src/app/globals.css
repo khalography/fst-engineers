@@ -46,6 +46,11 @@ body {
     text-align: justify;
     text-justify: inter-word;
   }
+
+  #hero p {
+    text-align: left;
+    text-justify: auto;
+  }
 }
 
 /* Lightbox custom styling overrides for high clarity */
