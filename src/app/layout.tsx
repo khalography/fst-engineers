@@ -24,9 +24,9 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const siteTitle = "GRP Fibre and Pressed Steel Water Tanks in Nigeria | FST Engineering";
+const siteTitle = "GRP Fiber and Pressed Steel Water Tanks in Nigeria | FST Engineering";
 const siteDescription =
-  "Hygienic, low maintenance GRP/FRP fibre and pressed steel water tanks in Nigeria. Built with Malaysia's leading tank manufacturer to BS, MS and SS standards.";
+  "Hygienic, low maintenance GRP/FRP fiber and pressed steel water tanks in Nigeria. Built with Malaysia's leading tank manufacturer to BS, MS and SS standards.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "FST Engineering, Fibre and Steel Water Tanks",
+        alt: "FST Engineering, Fiber and Steel Water Tanks",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "FST Engineering, Fibre and Steel Water Tanks",
+        alt: "FST Engineering, Fiber and Steel Water Tanks",
       },
     ],
   },

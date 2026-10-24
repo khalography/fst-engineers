@@ -115,7 +115,7 @@ export const siteContent = {
       label: "Products",
       href: "#products",
       children: [
-        { label: "GRP/FRP Fibre Tank", href: "#product-grp" },
+        { label: "GRP/FRP Fiber Tank", href: "#product-grp" },
         { label: "Physical Properties", href: "#product-properties" },
         { label: "Specification", href: "#product-specification" },
         { label: "Advantages", href: "#product-advantages" },
@@ -141,7 +141,7 @@ export const siteContent = {
         tag: "FST Engineering",
         headline: "Hygienic Water Storage, Built to Last",
         subheadline:
-          "Fibre and steel water tanks that keep water fresh and safe for extended periods.",
+          "Fiber and steel water tanks that keep water fresh and safe for extended periods.",
         image: "/images/hero-1.jpg",
         primaryCta: {
           label: "View Products",
@@ -221,7 +221,7 @@ export const siteContent = {
 
   companyIntro: {
     statement:
-      "We specialize in Fibre and Steel Water Tanks, built to solve the hygiene and maintenance problems of conventional tanks. We deliver premium, long-lasting water storage that is safe for human consumption.",
+      "We specialize in Fiber and Steel Water Tanks, built to solve the hygiene and maintenance problems of conventional tanks. We deliver premium, long-lasting water storage that is safe for human consumption.",
     highlights: [
       {
         title: "100% Hygienic and Low Maintenance",
@@ -276,15 +276,15 @@ export const siteContent = {
   products: {
     heading: "Products",
     product1: {
-      title: "GRP/FRP Fibre Tank",
+      title: "GRP/FRP Fiber Tank",
       paragraphs: [
-        "Our Fibre tank are versatile due to their modularity, low maintenance, excellent thermal and hygienic properties. Our tanks can be utilized as; potable water storage, irrigation water storage, fire-fighting storage tank, food storage processing reservoir and for government water project.",
-        "The low maintenance features, zero light penetration, stable thermal transition and hygienic quality makes our fiberglass tank panels superior for potable water storage. Our GRP/FRP fibre tank is from Malaysia and quality is more superior to other brands available in Nigeria Market today.",
+        "Our Fiber tank are versatile due to their modularity, low maintenance, excellent thermal and hygienic properties. Our tanks can be utilized as; potable water storage, irrigation water storage, fire-fighting storage tank, food storage processing reservoir and for government water project.",
+        "The low maintenance features, zero light penetration, stable thermal transition and hygienic quality makes our fiberglass tank panels superior for potable water storage. Our GRP/FRP fiber tank is from Malaysia and quality is more superior to other brands available in Nigeria Market today.",
       ],
       closingLine: "At FST Engineering, we don't exaggerate, our quality speaks volume!",
       properties: {
         title: "Physical Properties",
-        columns: ["Fibre Physical Properties", "GRP/FRP", "Acceptance Criteria Tolerance"],
+        columns: ["Fiber Physical Properties", "GRP/FRP", "Acceptance Criteria Tolerance"],
         rows: [
           { property: "Tensile Strength (MN/M2)", grp: "103", tolerance: "> 70" },
           { property: "Flexural Strength (MN/M2)", grp: "158.8", tolerance: "> 100" },
@@ -330,7 +330,7 @@ export const siteContent = {
         ],
       },
       advantages: {
-        title: "Advantages of GRP Fibre Tank",
+        title: "Advantages of GRP Fiber Tank",
         items: [
           "Good Quality",
           "Cheaper cost",
@@ -349,7 +349,7 @@ export const siteContent = {
       description:
         "This is a pre-fabricated tank plate sheet, which was designed to be mechanically connected together with bolts and nuts with a butyl Sealant tape in between so as to avoid leakage. Pressed steel tank can either be hot dipped galvanized or epoxy paint coated, it has been in existence for many years and its popular here in Nigeria due to their durability and wide acceptance.",
       closingLine:
-        "Kindly contact FST Engineering should you need pressed steel tank. Be rest assured for quality and good service when it comes to GRP fibre tank and pressed steel tank.",
+        "Kindly contact FST Engineering should you need pressed steel tank. Be rest assured for quality and good service when it comes to GRP fiber tank and pressed steel tank.",
       ctaButton: "Request a Quote",
     },
   },
@@ -367,7 +367,7 @@ export const siteContent = {
       },
       {
         quote:
-          "Maintenance used to take up a lot of our time with the old tanks. Since switching to a fibre tank from FST Engineering, the water stays fresh and the upkeep is minimal. I would recommend them.",
+          "Maintenance used to take up a lot of our time with the old tanks. Since switching to a fiber tank from FST Engineering, the water stays fresh and the upkeep is minimal. I would recommend them.",
         name: "Aisha Bello",
         role: "Estate Manager",
         initials: "AB",

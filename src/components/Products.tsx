@@ -24,7 +24,7 @@ export default function Products() {
           </h2>
         </div>
 
-        {/* PRODUCT 1: GRP/FRP Fibre Tank (Image Left / Text Right) */}
+        {/* PRODUCT 1: GRP/FRP Fiber Tank (Image Left / Text Right) */}
         <div id="product-grp" className="space-y-12 scroll-mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Image Slot Left: GRP Tank Slideshow */}
@@ -128,7 +128,7 @@ export default function Products() {
             </div>
           </div>
 
-          {/* Sub-section C: Advantages of GRP Fibre Tank */}
+          {/* Sub-section C: Advantages of GRP Fiber Tank */}
           <div id="product-advantages" className="space-y-4 scroll-mt-24 pt-4">
             <h3 className="text-xl sm:text-2xl font-bold text-[#10337A]">
               {p1.advantages.title}
