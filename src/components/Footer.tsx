@@ -115,12 +115,12 @@ export default function Footer() {
           <p className="text-[13px] text-white/70 w-full sm:w-auto text-left sm:text-right">
             Designed and built by{" "}
             <a
-              href="https://ibraheemqazeem.vercel.app/#"
+              href="https://adekunle.space/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors underline-offset-2 hover:underline"
             >
-              Caligraphy
+              Adekunle
             </a>
           </p>
         </div>
